@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="358.0" prefWidth="572.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanage.BooksController">
+    <children>
+        <TextField fx:id="bookIdField" layoutX="158.0" layoutY="76.0" prefHeight="32.0" prefWidth="245.0" />
+        <TextField fx:id="titleField" layoutX="156.0" layoutY="123.0" prefHeight="32.0" prefWidth="208.0" />
+        <TextField fx:id="publisherField" layoutX="156.0" layoutY="170.0" prefHeight="32.0" prefWidth="208.0" />
+
+        <Button fx:id="fetchBookButton" layoutX="404.0" layoutY="141.0" mnemonicParsing="false" onAction="#fetchBook" prefHeight="58.0" prefWidth="101.0" text="FETCH">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+        <Button fx:id="saveBookButton" layoutX="47.0" layoutY="269.0" mnemonicParsing="false" onAction="#saveBook" prefHeight="50.0" prefWidth="101.0" text="SAVE" />
+        <Button fx:id="updateBookButton" layoutX="171.0" layoutY="269.0" mnemonicParsing="false" onAction="#updateBook" prefHeight="50.0" prefWidth="109.0" text="UPDATE" />
+        <Button fx:id="deleteBookButton" layoutX="306.0" layoutY="269.0" mnemonicParsing="false" onAction="#deleteBook" prefHeight="50.0" prefWidth="109.0" text="DELETE" />
+        <Button fx:id="closeBookButton" layoutX="432.0" layoutY="269.0" mnemonicParsing="false" onAction="#closeWindow" prefHeight="50.0" prefWidth="102.0" text="CLOSE" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+
+        <Text layoutX="96.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Id:" />
+        <Text layoutX="93.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title:" />
+        <Text layoutX="92.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="publisher:" />
+      <Text layoutX="235.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book" underline="true" wrappingWidth="90.90618896484375">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="publishDateField" layoutX="156.0" layoutY="219.0" prefHeight="32.0" prefWidth="208.0" />
+      <Text layoutX="84.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="publish date:" />
+    </children>
+</AnchorPane>
